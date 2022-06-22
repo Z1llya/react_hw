@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import Character from "./components/Character";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Character name={'bart'} desc={'sdfsdfsdf'} img={'https://mir-s3-cdn-cf.behance.net/project_modules/1400/f15f5662080793.5a8432e3d5b6b.jpg'}/>
+      <Character name={'homer'} desc={'sdfsdfsdf'} img={'https://upload.wikimedia.org/wikipedia/uk/0/02/Homer_Simpson_2006.png?20070219004154'}/>
+      <Character name={'marge'} desc={'sdfsdfsdf'} img={'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'}/>
+
     </div>
   );
 }
