@@ -1,31 +1,18 @@
-import {useParams,Outlet} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import ApiServices from "../services/fetch-api-services";
-import PostComponent from "../components/PostComponent";
+import PostsComponent from "../components/PostsComponent";
 
 
 export default function PostPage(){
-    let {postId} = useParams();
-
-    let apiServices = new ApiServices(`posts/`+postId);
+    let {id} = useParams();
 
 
 
-    let [posts,setPost] = useState([]);
-
-
-    useEffect(()=>{
-        apiServices.getData().then(value => setPost(value));
-    } ,[])
 
     return(
         <div>
-            {
-                posts.map(value => <PostComponent element ={value} key={value.id}/>)
-            }
-
+            <PostsComponent id={{id}}/>
         </div>
-
     );
-
 }

@@ -1,7 +1,10 @@
+
+
 export default function PostComponent({element}){
     return(
         <div>
-            {element.body}
+            <hr/>
+            {element.title}
         </div>
     );
 }
