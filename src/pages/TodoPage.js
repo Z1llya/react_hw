@@ -1,6 +1,6 @@
 import ApiServices from "../services/fetch-api-services";
 import {useEffect, useState} from "react";
-import TodosComponents from "../components/TodosComponents";
+import TodosComponents from "../components/TodosComponent/TodosComponents";
 
 export default function TodoPage(){
 

@@ -3,7 +3,8 @@ import HomePage from "./pages/HomePage";
 import TodoPage from "./pages/TodoPage";
 import AlbumPage from "./pages/AlbumPage";
 import CommentPage from "./pages/CommentPage";
-import PostPage from "./pages/PostPage";
+
+import PostsComponent from "./components/PostComponent/PostsComponent";
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           <Route path={'todos'} element ={<TodoPage/>}/>
           <Route path={'albums'} element ={<AlbumPage/>}/>
           <Route path={'comments'} element ={<CommentPage/>}>
-              <Route path={':id'} element = {<PostPage/>}/>
+              <Route path={':id'} element = {<PostsComponent/>}/>
               </Route>
 
 
