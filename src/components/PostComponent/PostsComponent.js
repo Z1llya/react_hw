@@ -1,7 +1,8 @@
 import {useEffect, useState} from "react";
+import {useParams} from "react-router-dom";
+
 import ApiServices from "../../services/fetch-api-services";
 import PostComponent from "./PostComponent";
-import {useParams} from "react-router-dom";
 
 export default function PostsComponent(){
     let [posts,setPosts] = useState([]);

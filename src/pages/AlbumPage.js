@@ -1,6 +1,7 @@
 import ApiServices from "../services/fetch-api-services";
-import {useEffect, useState} from "react";
 import AlbumsComponent from "../components/AlbumsComponent/AlbumsComponent";
+
+import {useEffect, useState} from "react";
 
 export default function AlbumPage(){
 

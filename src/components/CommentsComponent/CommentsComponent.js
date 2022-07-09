@@ -1,6 +1,7 @@
-import {Link, Outlet} from "react-router-dom";
-import ApiServices from "../../services/fetch-api-services";
 import {useEffect, useState} from "react";
+
+
+import ApiServices from "../../services/fetch-api-services";
 import CommentComponent from "./CommentComponent";
 
 export default function CommentsComponent({element}){
