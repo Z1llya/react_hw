@@ -13,6 +13,7 @@ export default function Car({car}){
            <div>price: {price}</div>
            <div>year: {year}</div>
             <button onClick={()=>dispatch(carActions.setCarForUpdate(car))}>UpdateCar</button>
+            <button onClick={()=>dispatch(carActions.deleteById({id}))}>Delete</button>
         </div>
     );
 }
